@@ -47,6 +47,39 @@ extractor = KnowledgeExtractor(
 result = extractor.run("path/to/your/chatgpt_export.json")
 ```
 
+## Sample Output
+
+> Below is a preview of the extracted knowledge report. The full Chinese/English examples are in the `examples/` directory.
+
+```markdown
+# 📚 对话知识提取报告
+
+**提取时间**：2025-06-01 10:30:00
+**来源消息数**：8
+**提取知识点**：10
+
+---
+
+## #Python优化
+
+- ⭐ Python性能优化应先使用cProfile定位瓶颈，90%的性能问题集中在10%的代码中
+  > 首先用cProfile做性能分析，找到真正的瓶颈，不要凭直觉优化...
+
+- ⭐ 大规模数据使用NumPy向量化操作替代Python for循环，可获得10-50倍速度提升
+  > 用NumPy的数组运算替代Python的for循环，能快几十倍...
+
+- ⭐ CPU密集型任务使用multiprocessing而非多线程，因GIL限制多线程对CPU任务无效
+  > 多线程在Python里因为GIL的存在，对CPU密集型任务帮助不大...
+
+- ⭐ 使用functools.lru_cache缓存重复计算结果可显著提升性能
+  > 用functools.lru_cache缓存重复计算的函数结果，很多时候能带来显著提升...
+
+## #AI-Agent开发
+
+- ⭐ AI Agent四大核心组件：规划（Planning）、工具使用（Tool Use）、记忆（Memory）、执行（Action）
+  > 核心要理解Agent的四个组件：规划、工具使用、记忆、执行...
+```
+
 ## Use as a Hermes Skill
 
 ```python
