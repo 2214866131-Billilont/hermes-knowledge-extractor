@@ -17,7 +17,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/hermes-knowledge-extractor.git
+git clone https://github.com/221486613131-Billilont/hermes-knowledge-extractor.git
 cd hermes-knowledge-extractor
 
 # 安装依赖
